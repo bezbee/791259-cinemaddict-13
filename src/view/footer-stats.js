@@ -1,14 +1,15 @@
 import {createElement} from "../utils.js";
 
-const createFooterStatsTemplate = () => `<p>130 291 movies inside</p>`;
+const createFooterStatsTemplate = (count) => `<p>${count} movies inside</p>`;
 
 export class FooterStatsView {
-  constructor() {
+  constructor(count) {
     this._element = null;
+    this._count = count;
   }
 
   getTemplate() {
-    return createFooterStatsTemplate();
+    return createFooterStatsTemplate(this._count);
   }
 
   getElement() {
