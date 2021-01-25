@@ -5,23 +5,21 @@ export const SortType = {
 };
 
 export const UserAction = {
-  ADD_COMMENT: `ADD_COMMENT`,
-  DELTE_COMMENT: `DELETE_COMMENT`,
   UPDATE_FILM: `UPDATE_FILM`,
-}
+};
 
 export const UpdateType = {
   MINOR: `MINOR`,
   MAJOR: `MAJOR`,
   INIT: `INIT`,
-}
+};
 
 export const FilterType = {
   ALL: `all`,
   WATCHLIST: `watchlist`,
   HISTORY: `history`,
   FAVORITES: `favorites`,
-}
+};
 
 export const MenuStats = {
   FILMS: `FILMS`,

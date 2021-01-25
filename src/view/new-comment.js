@@ -94,7 +94,6 @@ export class NewCommentView extends SmartView {
   enableForm() {
     this.getElement().querySelector(`textarea`).removeAttribute(`disable`);
     this.getElement().querySelectorAll(`input`).forEach((el) => el.removeAttribute(`disable`));
-
   }
 
   _formSubmitHandler(evt) {

@@ -66,7 +66,7 @@ export class FilmsModel extends Observer {
   }
 
   static adaptToServer(film) {
-    const adaptedFilm = {
+    return {
       'comments': film.comments,
       'film_info': {
         'title': film.title,
@@ -92,8 +92,6 @@ export class FilmsModel extends Observer {
         'favorite': film.isFavorite,
       },
     };
-
-    return adaptedFilm;
 
   }
 }

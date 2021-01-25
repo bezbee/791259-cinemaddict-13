@@ -32,13 +32,4 @@ export class AbstractView {
       this.getElement().style.animation = ``;
     }, SHAKE_ANIMATION_TIMEOUT);
   }
-/*
-  show() {
-    this.getElement().classList.remove(`visually-hidden`);
-  }
-
-  hide() {
-    this.getElement().classList.add(`visually-hidden`);
-  }
-  */
 }

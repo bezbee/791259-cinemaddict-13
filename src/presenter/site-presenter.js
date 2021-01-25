@@ -15,7 +15,6 @@ import {FilmListContainerView} from "../view/films-list-container.js";
 import {NoFilmsView} from "../view/no-films.js";
 import {LoadingView} from "../view/loading.js";
 
-
 import {render, remove} from "../utils/render.js";
 import {SortType, UpdateType, UserAction, MenuStats} from "../const.js";
 const FILM_COUNT_PER_STEP = 5;
@@ -28,7 +27,6 @@ export class SitePresenter {
     this._filmsModel = filmsModel;
     this._filterModel = filterModel;
     this._api = api;
-
 
     this._isLoading = true;
     this._bodyContainer = bodyContainer;
@@ -48,7 +46,6 @@ export class SitePresenter {
     this._sortComponent = null;
     this._currentSortType = SortType.DEFAULT;
 
-
     this._filmsContainerComponent = new FilmsContainerView();
     this._noFilmsComponent = new NoFilmsView();
     this._loadingComponent = new LoadingView();
@@ -62,7 +59,6 @@ export class SitePresenter {
 
     this._handleFilmEvent = this._handleFilmEvent.bind(this);
     this._handleViewAction = this._handleViewAction.bind(this);
-
   }
 
   init() {
@@ -157,7 +153,6 @@ export class SitePresenter {
       .values(this._filmPresenter)
       .forEach((presenter) => presenter.resetView());
   }
-
 
   _handleSortTypeChange(sortType) {
     if (this._currentSortType === sortType) {

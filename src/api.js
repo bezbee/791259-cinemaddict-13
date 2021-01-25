@@ -4,6 +4,7 @@ import {
 import {
   CommentsModel
 } from "./model/comments.js";
+
 const Method = {
   GET: `GET`,
   PUT: `PUT`,
@@ -51,7 +52,6 @@ export class Api {
   }
 
   addComment(id, comment) {
-
     return this._load({
         url: `comments/${id}`,
         method: Method.POST,
